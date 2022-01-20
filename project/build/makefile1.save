@@ -1,0 +1,3 @@
+ain: ../src/main.c ../src/func1.c ../src/func2_1.c
+	gcc -o ReleasMake_1 main.o func1.o func2_1.o
+

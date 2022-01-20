@@ -1,0 +1,9 @@
+all: main1
+main1: main.o func1.o func2_1.o
+	gcc -o main1 main.o func1.o func2_1.o
+main.o: ../src/main.c
+	gcc -c -o main.o ../src/main.c
+func1.o: ../src/func1.c
+	gcc -c -o func1.o ../src/func1.c
+func2_1.o: ../src/func2_1.c
+	gcc -c -o func2_1.o ../src/func2_1.c
